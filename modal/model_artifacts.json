@@ -1,0 +1,184 @@
+{
+  "best_model_name": "XGBoost",
+  "global_late_rate": 0.5482964663052511,
+  "model_comparison": {
+    "LogisticRegression": {
+      "roc_auc": 0.7714398101236473,
+      "precision": 0.8814977973568282,
+      "recall": 0.5391351205711976,
+      "f1": 0.6690629440775725
+    },
+    "RandomForest": {
+      "roc_auc": 0.7735412981838398,
+      "precision": 0.8767522104809143,
+      "recall": 0.547689613363869,
+      "f1": 0.674212271973466
+    },
+    "XGBoost": {
+      "roc_auc": 0.7779185271871069,
+      "precision": 0.8710912571793236,
+      "recall": 0.5516637478108581,
+      "f1": 0.6755196304849884
+    }
+  },
+  "test_metrics": {
+    "roc_auc": 0.7778743900821662,
+    "precision": 0.8731028667790893,
+    "recall": 0.5579954196416543,
+    "f1": 0.6808580586833237,
+    "confusion_matrix": [
+      [
+        11027,
+        1204
+      ],
+      [
+        6562,
+        8284
+      ]
+    ]
+  },
+  "feature_importance": [
+    {
+      "feature": "Shipping Mode_Standard Class",
+      "importance": 0.277246356010437
+    },
+    {
+      "feature": "Shipping Mode_Same Day",
+      "importance": 0.13477055728435516
+    },
+    {
+      "feature": "Days for shipment (scheduled)",
+      "importance": 0.1341245174407959
+    },
+    {
+      "feature": "Shipping Mode_First Class",
+      "importance": 0.07595266401767731
+    },
+    {
+      "feature": "express_mode_flag",
+      "importance": 0.07463136315345764
+    },
+    {
+      "feature": "Order Status_SUSPECTED_FRAUD",
+      "importance": 0.03660796210169792
+    },
+    {
+      "feature": "Order Status_CANCELED",
+      "importance": 0.034893907606601715
+    },
+    {
+      "feature": "Shipping Mode_Second Class",
+      "importance": 0.010183009319007397
+    },
+    {
+      "feature": "Order Status_PROCESSING",
+      "importance": 0.003576277755200863
+    },
+    {
+      "feature": "Order Status_PENDING",
+      "importance": 0.0035080767702311277
+    },
+    {
+      "feature": "Order Country_Cuba",
+      "importance": 0.0021698179189115763
+    },
+    {
+      "feature": "Department Name_Book Shop",
+      "importance": 0.001855082344263792
+    },
+    {
+      "feature": "Order Country_Italia",
+      "importance": 0.001809784211218357
+    },
+    {
+      "feature": "Order Region_Canada",
+      "importance": 0.0017215384868904948
+    },
+    {
+      "feature": "Department Name_Discs Shop",
+      "importance": 0.0015312223695218563
+    },
+    {
+      "feature": "Order Country_Ucrania",
+      "importance": 0.0014653777470812201
+    },
+    {
+      "feature": "Order Country_Venezuela",
+      "importance": 0.0014625543262809515
+    },
+    {
+      "feature": "Order Status_PAYMENT_REVIEW",
+      "importance": 0.0014269803650677204
+    },
+    {
+      "feature": "Order Country_Guatemala",
+      "importance": 0.0013940919889137149
+    },
+    {
+      "feature": "Order Country_Marruecos",
+      "importance": 0.0013799106236547232
+    }
+  ],
+  "categorical_cols": [
+    "Type",
+    "Category Name",
+    "Customer Country",
+    "Customer Segment",
+    "Department Name",
+    "Market",
+    "Order Country",
+    "Order Region",
+    "Order Status",
+    "Shipping Mode"
+  ],
+  "numeric_cols": [
+    "Days for shipment (scheduled)",
+    "Benefit per order",
+    "Sales per customer",
+    "Order Item Discount",
+    "Order Item Discount Rate",
+    "Order Item Product Price",
+    "Order Item Profit Ratio",
+    "Order Item Quantity",
+    "Sales",
+    "Order Item Total",
+    "Order Profit Per Order",
+    "Product Price",
+    "shipping_pressure_index",
+    "express_mode_flag",
+    "order_complexity_score",
+    "tight_schedule_flag",
+    "discount_to_price_ratio",
+    "regional_congestion_index"
+  ],
+  "feature_cols": [
+    "Type",
+    "Category Name",
+    "Customer Country",
+    "Customer Segment",
+    "Department Name",
+    "Market",
+    "Order Country",
+    "Order Region",
+    "Order Status",
+    "Shipping Mode",
+    "Days for shipment (scheduled)",
+    "Benefit per order",
+    "Sales per customer",
+    "Order Item Discount",
+    "Order Item Discount Rate",
+    "Order Item Product Price",
+    "Order Item Profit Ratio",
+    "Order Item Quantity",
+    "Sales",
+    "Order Item Total",
+    "Order Profit Per Order",
+    "Product Price",
+    "shipping_pressure_index",
+    "express_mode_flag",
+    "order_complexity_score",
+    "tight_schedule_flag",
+    "discount_to_price_ratio",
+    "regional_congestion_index"
+  ]
+}
